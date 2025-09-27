@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
-  <meta name="description"
-        content=".">
+  <meta name="description" content=".">
   <meta name="keywords" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>VENTURA: Adapting Image Diffusion Models for Unified Task Conditioned Navigation</title>
@@ -18,125 +18,277 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
 </head>
+
 <body>
 
-<section class="hero masthead-hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered masthead">
-          <h1 class="title is-1 headline">VENTURA: Adapting Image Diffusion Models for Unified Task Conditioned Navigation</h1>
-          <div class="is-size-5 byline">
-            <span class="byline-item">
-              <a href="#">Auther One</a><sup>1,2</sup>,</span>
-              <a href="#">Auther Two</a><sup>2</sup>,</span>
-              <a href="#">Auther Three</a><sup>2, 3</sup>,</span>    
-              ...          
-            </span>                            
-          </div>
+  <section class="hero masthead-hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered masthead">
+            <h1 class="title is-1 headline">VENTURA: Adapting Image Diffusion Models for Unified Task Conditioned Navigation</h1>
 
-          <div class="is-size-5 byline">
-            <span class="byline-item"><sup>1</sup>Institution One,</span>
-            <span class="byline-item"><sup>2</sup>Institution Two,</span>
-            <span class="byline-item"><sup>3</sup>Institution Three</span>
-            ...
-          </div>
-
-          <div class="column has-text-centered">
-            <div class="action-bar">
-              <!-- Paper (PDF) -->
-              <span class="action-item">
-                <a href="#"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper (PDF)</span>
-                </a>
-              </span>
-              <!-- Video -->
-              <span class="action-item">
-                <a href="#video"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-video"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span>
-              <!-- Dataset -->
-              <span class="action-item">
-                <a href="#dataset"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>Dataset</span>
-                </a>
-              </span>
-              <!-- Code -->
-              <span class="action-item">
-                <a href="#"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
-                </a>
-              </span>
+            <div class="is-size-5 byline">
+              <span class="byline-item"><a href="#">Anonymous Authors</a></span>
+            </div>
+            <div class="is-size-5 byline">
+              <span class="byline-item">Anonymous Institution</span>
             </div>
 
-          </div>
-          <img src="./static/images/main_image.png" style="border-radius: 10px; width: 100%; height: auto; margin-top: 0.75rem;" loading="lazy"/>
-          <p class="subtitle is-5" style="margin-top: 0.5rem;">
-            description goes here
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+            <div class="column has-text-centered">
+              <div class="action-bar">
+                <!-- Paper (PDF) -->
+                <span class="action-item">
+                  <a href="./static/pdfs/VENTURA_anonymized.pdf" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                <span>Paper (PDF)</span>
+                </a>
+                </span>
+                <!-- Video -->
+                <span class="action-item">
+                  <a href="#video" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fas fa-video"></i></span>
+                <span>Video (Coming Soon)</span>
+                </a>
+                </span>
+                <!-- Dataset -->
+                <span class="action-item">
+                  <a href="#dataset" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="far fa-images"></i></span>
+                <span>Dataset (Coming Soon)</span>
+                </a>
+                </span>
+                <!-- Code -->
+                <span class="action-item">
+                  <a href="#" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fab fa-github"></i></span>
+                <span>Code (Coming Soon)</span>
+                </a>
+                </span>
+              </div>
+            </div>
 
-<!-- TL;DR under hero -->
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-10">
-        <h2 class="title is-4">TL;DR</h2>
-        <div class="content">
-          <ul>
-            <li>item1</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- Additional static items below abstract -->
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered">
-      <div class="column is-7">
-        <div class="summary-card">
-          <h2 class="title is-3">Abstract</h2>
-          <div class="content has-text-justified">
-            <p>
-              enter abstract
+            <video autoplay muted playsinline controls loop preload="metadata" style="width: 100%; border-radius: 10px;">
+              <source src="./static/videos/mainwebsite_animation.mp4" type="video/mp4">
+            </video>
+            <p class="subtitle is-5" style="margin-top: 0.5rem;">
+              VENTURA turns language instructions into safe, precise robot paths by adapting pre-trained image diffusion
+              models for visual planning, enabling adaptive navigation behaviors in open-world environmets.
             </p>
           </div>
         </div>
       </div>
-      <div class="column is-5">
-        <video id="video" controls muted playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
-          <source src="./static/videos/video.mp4" type="video/mp4">
-        </video>
+    </div>
+  </section>
+
+  <!-- Abstract -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-10">
+          <div class="summary-card">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>
+                General purpose robots must follow diverse human instructions and navigate safely in unstructured
+                environments. While Vision-Language Models (VLMs) provide strong priors, they remain hard to steer for
+                navigation. We present VENTURA, a vision-language navigation system that finetunes internet-pretrained
+                image diffusion models for path planning. Rather than directly predicting low-level actions, VENTURA
+                first produces a visual path mask that captures fine-grained, context-aware behaviors, which a
+                lightweight policy translates into executable trajectories. To scale training, we automatically
+                generate supervision from self-supervised tracking and VLM-augmented captions, avoiding costly manual
+                labels. In real-world evaluations, VENTURA improves success by 33% and reduces collisions by 54% over
+                foundation model baselines, while generalizing to unseen task combinations with emergent compositional
+                skills.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <!--/ Abstract. -->
-  </div>
-</section>
+  </section>
+
+  <!-- Main Approach -->
+  <section class="section" id="approach">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-10">
+          <div class="column has-text-centered masthead">
+            <h2 class="title is-4">Adapting Image Diffusion Models for Visual Planning</h2>
+          </div>
+          <div class="content">
+            VENTURA conditions on the image observation and goal instruction to denoise a path mask from random Gaussian noise.
+            A lightweight policy conditions on the predicted path mask and image features to produce a sequence of navigation waypoints.
+            In this manner, VENTURA leverages the strong priors of pre-trained diffusion models to produce precise, long-range navigation
+            plans that can be flexibly adapted to diverse tasks and environments.
+          </div>
+          <img src="./static/images/architectureoverview.png" style="border-radius: 10px; width: 100%; height: auto; margin-top: 0.75rem;" loading="lazy" alt="VENTURA architecture overview" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Main Approach -->
+
+  <!-- Data Curation -->
+  <section class="section" id="data-curation">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-10">
+          <div class="column has-text-centered masthead">
+            <h2 class="title is-4">Scalable Data Curation with Self-Supervised Point Tracking</h2>
+          </div>
+
+          <div class="content">
+            VENTURA conditions on the image observation and goal instruction to denoise a path mask from random Gaussian noise.
+            A lightweight policy conditions on the predicted path mask and image features to produce a sequence of navigation waypoints.
+            In this manner, VENTURA leverages the strong priors of pre-trained diffusion models to produce precise, long-range navigation
+            plans that can be flexibly adapted to diverse tasks and environments.
+          </div>
+
+          <!-- Side-by-side media row -->
+          <div class="columns is-vcentered is-variable is-5">
+            <!-- Left: Image -->
+            <div class="column is-7-tablet is-7-desktop">
+              <figure class="image">
+                <img src="./static/images/datapipeline_v5.jpg" alt="VENTURA data curation pipeline" loading="lazy" style="border-radius: 10px;">
+              </figure>
+            </div>
+            <!-- Right: Video -->
+            <div class="column is-5-tablet is-5-desktop">
+              <video muted autoplay playsinline loop preload="metadata" style="width: 100%; border-radius: 10px;">
+                <source src="./static/videos/pointtracking.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Data Curation -->
+
+  <!-- Dataset -->
+  <section class="section" id="dataset">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-10">
+          <div class="column has-text-centered masthead">
+            <h2 class="title is-4">Language Annotated Navigation Dataset</h2>
+          </div>
+
+          <div class="content">
+            Our dataset contains 10 hours of egocentric RGB video with automatically derived path masks from
+            self-supervised point tracking. 1.5 hours are annotated with language instructions describing navigation behaviors. To support future research on language-conditioned navigation, we release the dataset and provide qualitative examples of the language annotations and path masks below.
+          </div>
+
+          <figure class="image">
+            <img src="./static/images/dataset.jpg" alt="VENTURA dataset overview" loading="lazy" style="border-radius: 10px;">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Dataset -->
+
+  <!-- Baselines and Evaluation -->
+  <section class="section" id="evaluation">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-10">
+          <div class="column has-text-centered masthead">
+            <h2 class="title is-4" id="video">Real-World Evaluation and Baselines</h2>
+          </div>
+
+          <div class="content">
+            We evaluate VENTURA across over 150 real-world, closed-loop trials across navigation tasks that require diverse skills, including obstacle avoidance,
+            object goal navigation, and preference-aware terrain navigation. We compare against VLA and robot foundation models that leverage VLMs
+            and web-scale data. VENTURA outperforms all baselines by a significant margin, demonstrating its ability to adapt pre-trained diffusion
+            models for precise and safe navigation in unstructured environments.
+          </div>
+
+          <img src="./static/images/model_comparison.png" alt="VENTURA evaluation results" loading="lazy" style="border-radius: 10px;">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Baselines and Evaluation -->
+
+  <!-- Deployment -->
+  <section class="section" id="deployment">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-10">
+          <div class="column has-text-centered masthead">
+            <h2 class="title is-4">Deployment: Language-Conditioned Navigation</h2>
+          </div>
+
+          <div class="content">
+            In addition to quantitative experiments, we deploy VENTURA on the same Unitree Go2w robot platform across a variety of urban and off-road trails. We perform offline model inference on human teleoperated robot data to fairly compare VENTURA qualitatively against baselines. The model successfully follows diverse language instructions in unseen environments, demonstrating its ability to generalize to new tasks and settings.
+          </div>
+
+          <!-- Stacked deployment videos -->
+          <div class="content">
+            <p class="has-text-weight-semibold">“Continue on the trail. Avoid foliage and loose debris.”</p>
+            <video muted autoplay playsinline controls loop preload="metadata" style="width: 100%; border-radius: 10px; margin-bottom: 1rem;">
+              <source src="./static/videos/forest_qualitative.mp4" type="video/mp4">
+            </video>
+
+            <p class="has-text-weight-semibold">“Continue on the paved path, avoiding metal fences.”</p>
+            <video muted autoplay playsinline controls loop preload="metadata" style="width: 100%; border-radius: 10px; margin-bottom: 1rem;">
+              <source src="./static/videos/urban_barriers.mp4" type="video/mp4">
+            </video>
+
+            <p class="has-text-weight-semibold">“Follow the crosswalk markings. Keep a safe distance from pedestrians.”</p>
+            <video muted autoplay playsinline controls loop preload="metadata" style="width: 100%; border-radius: 10px;">
+              <source src="./static/videos/urban_dynamic.mp4" type="video/mp4">
+            </video>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Deployment -->
+
+  <!-- Limitations -->
+  <section class="section" id="limitations">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-10">
+          <div class="column has-text-centered masthead">
+            <h2 class="title is-4">Limitations</h2>
+          </div>
+
+          <div class="columns is-vcentered is-variable is-6">
+            <!-- Left: Image illustrating limitations -->
+            <div class="column is-6">
+              <figure class="image">
+                <img src="./static/images/limitations.jpg" alt="VENTURA limitations examples" loading="lazy" style="border-radius: 10px;">
+              </figure>
+            </div>
+
+            <!-- Right: Text describing limitations -->
+            <div class="column is-6">
+              <div class="content">
+                <p>
+                  VENTURA is not without its limitations. We view the challenges below as future opportunities to enhance our approach's expressiveness and deployability:
+                </p>
+                <ul>
+                  <li><strong>Generalization to novel motion primitives:</strong> Our model does not extrapolate to complex motion patterns (e.g. circle around the house).</li>
+                  <li><strong>Understanding objects dynamics:</strong> Complex motion dynamics (e.g. social behavior or vehicle dynamics) are not addressed by our approach.</li>
+                  <li><strong>Image space planning limitations:</strong> Specific navigation plans (e.g. reversing backwards, turning in place) may be challenging to represent and execute in image space.</li>
+                  <li><strong>Temporal consistency:</strong> Our framework does not enforce temporal consistency across timesteps, which may result in unstable asynchronous behavior.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Limitations -->
+
 </body>
+
 </html>
