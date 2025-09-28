@@ -139,10 +139,7 @@
           </div>
 
           <div class="content">
-            VENTURA conditions on the image observation and goal instruction to denoise a path mask from random Gaussian noise.
-            A lightweight policy conditions on the predicted path mask and image features to produce a sequence of navigation waypoints.
-            In this manner, VENTURA leverages the strong priors of pre-trained diffusion models to produce precise, long-range navigation
-            plans that can be flexibly adapted to diverse tasks and environments.
+            Modern policy learning methods for navigation often rely on datasets with accurate odometry and carefully design hardware setups, which limits scalability. To scale training from heterogeneous demonstrations, we leverage CoTracker, an off-the-shelf point tracking model, to automatically label uncalibrated, egocentric video with path masks. We further caption these videos with VLMs and human-in-the-loop assistance to generate diverse language annotations.
           </div>
 
           <!-- Side-by-side media row -->
