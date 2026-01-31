@@ -2,19 +2,22 @@ body {
   font-family: 'DM Sans', 'Noto Sans', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
 }
 
-pre, code, kbd, samp {
+pre,
+code,
+kbd,
+samp {
   font-family: 'DM Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 
 .footer .icon-link {
-    font-size: 25px;
-    color: #ff6937;
+  font-size: 25px;
+  color: #ff6937;
 }
 
 .action-item a {
-    margin-top: 5px;
-    margin-bottom: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .dnerf {
@@ -29,7 +32,8 @@ pre, code, kbd, samp {
 
 /* Reduce extra space below masthead hero */
 .masthead-hero .hero-body {
-  padding-bottom: 1.5rem; /* Bulma default section spacing feel */
+  padding-bottom: 1.5rem;
+  /* Bulma default section spacing feel */
 }
 
 .lead-banner {
@@ -55,66 +59,64 @@ pre, code, kbd, samp {
 .byline {}
 
 .headline {
-    font-family: 'DM Sans', 'Noto Sans', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  font-family: 'DM Sans', 'Noto Sans', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
 }
 
 .byline {
-    font-family: 'DM Sans', 'Noto Sans', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  font-family: 'DM Sans', 'Noto Sans', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
 }
 
 .venue-label {
-    color: #555;
-    width: fit-content;
-    font-weight: bold;
+  color: #555;
+  width: fit-content;
+  font-weight: bold;
 }
 
 .highlight-badge {
-    color: #ff3860;
-    width: fit-content;
-    font-weight: bolder;
+  color: #ff3860;
+  width: fit-content;
+  font-weight: bolder;
 }
 
 .byline {}
 
 .byline a {
-   color: #ff6937 !important;
+  color: #ff6937 !important;
 }
 
 .byline a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .byline-item {
   display: inline-block;
 }
 
-.media-strip img {
-}
+.media-strip img {}
 
 .publication-authors {
   /*color: #4286f4;*/
 }
 
 .video-frame {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
 
-    overflow: hidden;
-    border-radius: 10px !important;
+  overflow: hidden;
+  border-radius: 10px !important;
 }
 
 .video-frame iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-.article-body img {
-}
+.article-body img {}
 
 .result-gallery {
   overflow: hidden;
@@ -144,8 +146,7 @@ pre, code, kbd, samp {
   border-radius: 5px;
 }
 
-.morph-video-col {
-}
+.morph-video-col {}
 
 .morph-panel .slider {
   margin: 0 !important;
@@ -158,6 +159,7 @@ pre, code, kbd, samp {
 #morph-image-wrapper {
   width: 100%;
 }
+
 #morph-image-wrapper img {
   border-radius: 5px;
 }
@@ -182,4 +184,37 @@ a:visited {
 .todo {
   color: #ff1744;
   font-weight: 700;
+}
+
+/* Citation block wrapper so we can position the button */
+.citation-box {
+  position: relative;
+}
+
+/* Make space so the button doesn't overlap the first line */
+.citation-box pre {
+  padding-top: 2.5rem;
+  /* adjust as needed */
+}
+
+/* Copy button in the top-right of the citation box */
+.copy-btn {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  z-index: 2;
+
+  border: none;
+  cursor: pointer;
+
+  /* feel free to tweak styling to match your site */
+  background: rgba(0, 0, 0, 0.15);
+  color: inherit;
+  border-radius: 8px;
+  padding: 0.45rem 0.6rem;
+  line-height: 1;
+}
+
+.copy-btn:hover {
+  background: rgba(0, 0, 0, 0.25);
 }

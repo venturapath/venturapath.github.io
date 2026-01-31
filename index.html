@@ -19,6 +19,50 @@
   <script defer src="./static/js/fontawesome.all.min.js"></script>
 </head>
 
+<script>
+  function fallbackCopyTextToClipboard(text) {
+    const ta = document.createElement("textarea");
+    ta.value = text;
+    ta.setAttribute("readonly", "");
+    ta.style.position = "fixed";
+    ta.style.top = "-9999px";
+    document.body.appendChild(ta);
+    ta.select();
+    try {
+      document.execCommand("copy");
+    } finally {
+      document.body.removeChild(ta);
+    }
+  }
+
+  async function copyBibtex() {
+    const el = document.getElementById("bibtexBlock");
+    const btn = document.getElementById("copyBibtexBtn");
+    const text = el ? el.innerText.trim() : "";
+
+    try {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(text);
+      } else {
+        fallbackCopyTextToClipboard(text);
+      }
+
+      // Optional: quick visual feedback
+      const icon = btn.querySelector("i");
+      const oldClass = icon.className;
+      icon.className = "fas fa-check";
+      setTimeout(() => (icon.className = oldClass), 900);
+    } catch (e) {
+      console.error("Copy failed:", e);
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const btn = document.getElementById("copyBibtexBtn");
+    if (btn) btn.addEventListener("click", copyBibtex);
+  });
+</script>
+
 <body>
 
   <section class="hero masthead-hero">
@@ -29,10 +73,21 @@
             <h1 class="title is-1 headline">VENTURA: Adapting Image Diffusion Models for Unified Task Conditioned Navigation</h1>
 
             <div class="is-size-5 byline">
-              <span class="byline-item"><a href="#">Anonymous Authors</a></span>
+              <span class="byline-item">
+                <b><a href="https://www.arthurkzhang.com/">Arthur Zhang</a></b><sup>1,2</sup>,
+                <a href="https://scholar.google.com/citations?user=JUuickkAAAAJ&hl=en">Xiangyun Meng<sup>1</sup>,</a>
+                <a href="#">Luca Calliari<sup>1</sup>,</a>
+                <a href="https://dkkim93.github.io/">Dong-Ki Kim<sup>1</sup>,</a>
+              </span>
+              <span class="byline-item">
+                <a href="https://scholar.google.com/citations?user=nm5wMNUAAAAJ&hl=en">Shayegan Omidshafiei<sup>1</sup>,</a>
+                <a href="https://www.joydeepb.com/">Joydeep Biswas<sup>2</sup>,</a>
+                <a href="https://people.lids.mit.edu/aliagha/">Ali Agha<sup>1</sup>,</a>
+                <a href="https://scholar.google.com/citations?user=6Q6TCkkAAAAJ&hl=en">Amirreza Shaban<sup>1</sup></a>
+              </span>
             </div>
             <div class="is-size-5 byline">
-              <span class="byline-item">Anonymous Institution</span>
+              <span class="byline-item">Field AI<sup>1</sup>, UT Austin<sup>2</sup></span>
             </div>
 
             <div class="column has-text-centered">
@@ -285,6 +340,37 @@
     </div>
   </section>
   <!--/ Limitations -->
+
+  <!-- Citation -->
+  <section class="section" id="citation">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-10">
+          <div class="column has-text-centered masthead">
+            <h2 class="title is-4">Citation</h2>
+          </div>
+
+          <div class="content has-text-justified">
+            If you find VENTURA useful in your research, please consider citing our paper:
+
+            <div class="citation-box">
+              <button id="copyBibtexBtn" class="copy-btn" type="button" title="Copy BibTeX">
+                <i class="fas fa-copy"></i>
+              </button>
+
+              <pre id="bibtexBlock"><code>@inproceedings{zhang2026ventura,
+    title={VENTURA: Adapting Image Diffusion Models for Unified Task Conditioned Navigation},
+    author={Zhang, Arthur and Meng, Xiangyun and Calliari, Luca and Kim, Dong-Ki and Omidshafiei, Shayegan and Biswas, Joydeep and Agha, Ali and Shaban, Amirreza},
+    booktitle={IEEE International Conference on Robotics and Automation (ICRA)},
+    year={2026}
+  }</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Citation -->
 
 </body>
 
