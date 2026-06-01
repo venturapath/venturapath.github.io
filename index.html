@@ -8,7 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>VENTURA: Adapting Image Diffusion Models for Unified Task Conditioned Navigation</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=DM+Sans:wght@400;500;700&display=swap"
+    rel="stylesheet">
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
@@ -70,7 +71,8 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered masthead">
-            <h1 class="title is-1 headline">VENTURA: Adapting Image Diffusion Models for Unified Task Conditioned Navigation</h1>
+            <h1 class="title is-1 headline">VENTURA: Adapting Image Diffusion Models for Unified Task Conditioned
+              Navigation</h1>
 
             <div class="acceptance-badge">
               <span class="acceptance-pill">
@@ -86,7 +88,8 @@
                 <a href="https://dkkim93.github.io/">Dong-Ki Kim<sup>1</sup>,</a>
               </span>
               <span class="byline-item">
-                <a href="https://scholar.google.com/citations?user=nm5wMNUAAAAJ&hl=en">Shayegan Omidshafiei<sup>1</sup>,</a>
+                <a href="https://scholar.google.com/citations?user=nm5wMNUAAAAJ&hl=en">Shayegan
+                  Omidshafiei<sup>1</sup>,</a>
                 <a href="https://www.joydeepb.com/">Joydeep Biswas<sup>2</sup>,</a>
                 <a href="https://people.lids.mit.edu/aliagha/">Ali Agha<sup>1</sup>,</a>
                 <a href="https://scholar.google.com/citations?user=6Q6TCkkAAAAJ&hl=en">Amirreza Shaban<sup>1</sup></a>
@@ -100,36 +103,39 @@
               <div class="action-bar">
                 <!-- Paper (PDF) -->
                 <span class="action-item">
-                  <a href="./static/pdfs/VENTURA_anonymized.pdf" class="external-link button is-normal is-rounded is-dark">
+                  <a href="./static/pdfs/VENTURA_anonymized.pdf"
+                    class="external-link button is-normal is-rounded is-dark">
                     <span class="icon"><i class="fas fa-file-pdf"></i></span>
-                <span>Paper (PDF)</span>
-                </a>
+                    <span>Paper (PDF)</span>
+                  </a>
                 </span>
                 <!-- Video -->
                 <span class="action-item">
                   <a href="#video" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon"><i class="fas fa-video"></i></span>
-                <span>Video (Coming Soon)</span>
-                </a>
+                    <span>Video (Coming Soon)</span>
+                  </a>
                 </span>
                 <!-- Dataset -->
                 <span class="action-item">
                   <a href="#dataset" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon"><i class="far fa-images"></i></span>
-                <span>Dataset (Coming Soon)</span>
-                </a>
+                    <span>Dataset (Coming Soon)</span>
+                  </a>
                 </span>
                 <!-- Code -->
                 <span class="action-item">
-                  <a href="#" class="external-link button is-normal is-rounded is-dark">
+                  <a href="https://github.com/artzha/ventura_public"
+                    class="external-link button is-normal is-rounded is-dark">
                     <span class="icon"><i class="fab fa-github"></i></span>
-                <span>Code (Coming Soon)</span>
-                </a>
+                    <span>Code</span>
+                  </a>
                 </span>
               </div>
             </div>
 
-            <video autoplay muted playsinline controls loop preload="metadata" style="width: 100%; border-radius: 10px;">
+            <video autoplay muted playsinline controls loop preload="metadata"
+              style="width: 100%; border-radius: 10px;">
               <source src="./static/videos/mainwebsite_animation.mp4" type="video/mp4">
             </video>
             <p class="subtitle is-5" style="margin-top: 0.5rem;">
@@ -178,12 +184,17 @@
             <h2 class="title is-4">Adapting Image Diffusion Models for Visual Planning</h2>
           </div>
           <div class="content">
-            VENTURA conditions on the image observation and goal instruction to denoise a path mask from random Gaussian noise.
-            A lightweight policy conditions on the predicted path mask and image features to produce a sequence of navigation waypoints.
-            In this manner, VENTURA leverages the strong priors of pre-trained diffusion models to produce precise, long-range navigation
+            VENTURA conditions on the image observation and goal instruction to denoise a path mask from random Gaussian
+            noise.
+            A lightweight policy conditions on the predicted path mask and image features to produce a sequence of
+            navigation waypoints.
+            In this manner, VENTURA leverages the strong priors of pre-trained diffusion models to produce precise,
+            long-range navigation
             plans that can be flexibly adapted to diverse tasks and environments.
           </div>
-          <img src="./static/images/architectureoverview.png" style="border-radius: 10px; width: 100%; height: auto; margin-top: 0.75rem;" loading="lazy" alt="VENTURA architecture overview" />
+          <img src="./static/images/architectureoverview.png"
+            style="border-radius: 10px; width: 100%; height: auto; margin-top: 0.75rem;" loading="lazy"
+            alt="VENTURA architecture overview" />
         </div>
       </div>
     </div>
@@ -200,7 +211,11 @@
           </div>
 
           <div class="content">
-            Modern policy learning methods for navigation often rely on datasets with accurate odometry and carefully design hardware setups, which limits scalability. To scale training from heterogeneous demonstrations, we leverage CoTracker, an off-the-shelf point tracking model, to automatically label uncalibrated, egocentric video with path masks. We further caption these videos with VLMs and human-in-the-loop assistance to generate diverse language annotations.
+            Modern policy learning methods for navigation often rely on datasets with accurate odometry and carefully
+            design hardware setups, which limits scalability. To scale training from heterogeneous demonstrations, we
+            leverage CoTracker, an off-the-shelf point tracking model, to automatically label uncalibrated, egocentric
+            video with path masks. We further caption these videos with VLMs and human-in-the-loop assistance to
+            generate diverse language annotations.
           </div>
 
           <!-- Side-by-side media row -->
@@ -208,7 +223,8 @@
             <!-- Left: Image -->
             <div class="column is-7-tablet is-7-desktop">
               <figure class="image">
-                <img src="./static/images/datapipeline_v5.jpg" alt="VENTURA data curation pipeline" loading="lazy" style="border-radius: 10px;">
+                <img src="./static/images/datapipeline_v5.jpg" alt="VENTURA data curation pipeline" loading="lazy"
+                  style="border-radius: 10px;">
               </figure>
             </div>
             <!-- Right: Video -->
@@ -236,11 +252,14 @@
 
           <div class="content">
             Our dataset contains 10 hours of egocentric RGB video with automatically derived path masks from
-            self-supervised point tracking. 1.5 hours are annotated with language instructions describing navigation behaviors. To support future research on language-conditioned navigation, we release the dataset and provide qualitative examples of the language annotations and path masks below.
+            self-supervised point tracking. 1.5 hours are annotated with language instructions describing navigation
+            behaviors. To support future research on language-conditioned navigation, we release the dataset and provide
+            qualitative examples of the language annotations and path masks below.
           </div>
 
           <figure class="image">
-            <img src="./static/images/dataset.jpg" alt="VENTURA dataset overview" loading="lazy" style="border-radius: 10px;">
+            <img src="./static/images/dataset.jpg" alt="VENTURA dataset overview" loading="lazy"
+              style="border-radius: 10px;">
           </figure>
         </div>
       </div>
@@ -258,13 +277,17 @@
           </div>
 
           <div class="content">
-            We evaluate VENTURA across over 150 real-world, closed-loop trials across navigation tasks that require diverse skills, including obstacle avoidance,
-            object goal navigation, and preference-aware terrain navigation. We compare against VLA and robot foundation models that leverage VLMs
-            and web-scale data. VENTURA outperforms all baselines by a significant margin, demonstrating its ability to adapt pre-trained diffusion
+            We evaluate VENTURA across over 150 real-world, closed-loop trials across navigation tasks that require
+            diverse skills, including obstacle avoidance,
+            object goal navigation, and preference-aware terrain navigation. We compare against VLA and robot foundation
+            models that leverage VLMs
+            and web-scale data. VENTURA outperforms all baselines by a significant margin, demonstrating its ability to
+            adapt pre-trained diffusion
             models for precise and safe navigation in unstructured environments.
           </div>
 
-          <img src="./static/images/model_comparison.png" alt="VENTURA evaluation results" loading="lazy" style="border-radius: 10px;">
+          <img src="./static/images/model_comparison.png" alt="VENTURA evaluation results" loading="lazy"
+            style="border-radius: 10px;">
         </div>
       </div>
     </div>
@@ -281,23 +304,30 @@
           </div>
 
           <div class="content">
-            In addition to quantitative experiments, we deploy VENTURA on the same Unitree Go2w robot platform across a variety of urban and off-road trails. We perform offline model inference on human teleoperated robot data to fairly compare VENTURA qualitatively against baselines. The model successfully follows diverse language instructions in unseen environments, demonstrating its ability to generalize to new tasks and settings.
+            In addition to quantitative experiments, we deploy VENTURA on the same Unitree Go2w robot platform across a
+            variety of urban and off-road trails. We perform offline model inference on human teleoperated robot data to
+            fairly compare VENTURA qualitatively against baselines. The model successfully follows diverse language
+            instructions in unseen environments, demonstrating its ability to generalize to new tasks and settings.
           </div>
 
           <!-- Stacked deployment videos -->
           <div class="content">
             <p class="has-text-weight-semibold">“Continue on the trail. Avoid foliage and loose debris.”</p>
-            <video muted autoplay playsinline controls loop preload="metadata" style="width: 100%; border-radius: 10px; margin-bottom: 1rem;">
+            <video muted autoplay playsinline controls loop preload="metadata"
+              style="width: 100%; border-radius: 10px; margin-bottom: 1rem;">
               <source src="./static/videos/forest_qualitative.mp4" type="video/mp4">
             </video>
 
             <p class="has-text-weight-semibold">“Continue on the paved path, avoiding metal fences.”</p>
-            <video muted autoplay playsinline controls loop preload="metadata" style="width: 100%; border-radius: 10px; margin-bottom: 1rem;">
+            <video muted autoplay playsinline controls loop preload="metadata"
+              style="width: 100%; border-radius: 10px; margin-bottom: 1rem;">
               <source src="./static/videos/urban_barriers.mp4" type="video/mp4">
             </video>
 
-            <p class="has-text-weight-semibold">“Follow the crosswalk markings. Keep a safe distance from pedestrians.”</p>
-            <video muted autoplay playsinline controls loop preload="metadata" style="width: 100%; border-radius: 10px;">
+            <p class="has-text-weight-semibold">“Follow the crosswalk markings. Keep a safe distance from pedestrians.”
+            </p>
+            <video muted autoplay playsinline controls loop preload="metadata"
+              style="width: 100%; border-radius: 10px;">
               <source src="./static/videos/urban_dynamic.mp4" type="video/mp4">
             </video>
           </div>
@@ -321,7 +351,8 @@
             <!-- Left: Image illustrating limitations -->
             <div class="column is-6">
               <figure class="image">
-                <img src="./static/images/limitations.jpg" alt="VENTURA limitations examples" loading="lazy" style="border-radius: 10px;">
+                <img src="./static/images/limitations.jpg" alt="VENTURA limitations examples" loading="lazy"
+                  style="border-radius: 10px;">
               </figure>
             </div>
 
@@ -329,13 +360,18 @@
             <div class="column is-6">
               <div class="content">
                 <p>
-                  VENTURA is not without its limitations. We view the challenges below as future opportunities to enhance our approach's expressiveness and deployability:
+                  VENTURA is not without its limitations. We view the challenges below as future opportunities to
+                  enhance our approach's expressiveness and deployability:
                 </p>
                 <ul>
-                  <li><strong>Generalization to novel motion primitives:</strong> Our model does not extrapolate to complex motion patterns (e.g. circle around the house).</li>
-                  <li><strong>Understanding objects dynamics:</strong> Complex motion dynamics (e.g. social behavior or vehicle dynamics) are not addressed by our approach.</li>
-                  <li><strong>Image space planning limitations:</strong> Specific navigation plans (e.g. reversing backwards, turning in place) may be challenging to represent and execute in image space.</li>
-                  <li><strong>Temporal consistency:</strong> Our framework does not enforce temporal consistency across timesteps, which may result in unstable asynchronous behavior.</li>
+                  <li><strong>Generalization to novel motion primitives:</strong> Our model does not extrapolate to
+                    complex motion patterns (e.g. circle around the house).</li>
+                  <li><strong>Understanding objects dynamics:</strong> Complex motion dynamics (e.g. social behavior or
+                    vehicle dynamics) are not addressed by our approach.</li>
+                  <li><strong>Image space planning limitations:</strong> Specific navigation plans (e.g. reversing
+                    backwards, turning in place) may be challenging to represent and execute in image space.</li>
+                  <li><strong>Temporal consistency:</strong> Our framework does not enforce temporal consistency across
+                    timesteps, which may result in unstable asynchronous behavior.</li>
                 </ul>
               </div>
             </div>
